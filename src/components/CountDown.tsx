@@ -31,7 +31,7 @@ export default function Countdown() {
     }, []);
 
     return (
-        <div className="flex flex-wrap items-center justify-center gap-y-2 space-x-2 text-[50px] font-semibold">
+        <div className="flex flex-wrap items-center justify-center gap-y-2 space-x-2 text-[50px] lg:text-[60px] font-semibold">
             <div className="bg-white/10 py-2 px-3 rounded-lg backdrop-blur-md border border-white/20">
                {timeLeft.days} <span className="text-[10px]">days</span>
             </div>

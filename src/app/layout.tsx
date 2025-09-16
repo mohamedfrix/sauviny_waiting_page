@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Work_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Work_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,9 +17,14 @@ const workSans = Work_Sans({
   subsets: ["latin"],
 });
 
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Sauviny",
-  description: "Sauviny - Your trusted platform",
+  title: "Sauvini",
+  description: "Sauvini - Your trusted platform",
   icons: {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
@@ -35,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>

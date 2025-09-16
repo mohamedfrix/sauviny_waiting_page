@@ -30,10 +30,10 @@ export default function MainContentCard() {
                             className="object-contain w-[80px] md:w-[100px] lg:w-[120px]"
                             priority
                         />
-                        <p className={`font-sans font-semibold text-[40px] md:text-[48px] lg:text-[58px]`}>Sauviny</p>
+                        <p className={`font-montserrat font-semibold text-[40px] md:text-[48px] lg:text-[58px]`}>Sauvini</p>
                     </motion.div>
 
-                    <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-sans font-semibold`}
+                    <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-montserrat font-semibold`}
                         initial={{ opacity: 0, y: 0 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.6 }}
