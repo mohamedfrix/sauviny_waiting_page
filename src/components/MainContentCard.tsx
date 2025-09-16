@@ -14,6 +14,7 @@ export default function MainContentCard() {
                     alt="Background"
                     className="object-cover row-start-1 col-start-1 w-full h-full rounded-[32px]"
                     priority
+                    quality={100}
                 />
                 <div className={`w-full mt-[80px] lg:mt-[120px] row-start-1 col-start-1 flex flex-col items-center self-start gap-y-[20px]`}>
                     <motion.div className={`w-full flex justify-center items-center gap-x-[12px] -translate-x-[15px]`}
