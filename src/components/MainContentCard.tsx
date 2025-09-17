@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 export default function MainContentCard() {
     return (
         <>
-            <div className={`rounded-[32px] lg:rounded-[64px] overflow-hidden w-[95%] lg:w-[70%] h-[80%] grid grid-rows-1 grid-cols-1 border-[#4F77A8] border-[2px]`}>
+            <div className={`rounded-[32px] lg:rounded-[64px] overflow-hidden w-[95%] lg:w-[70%] h-[80%] min-h-[650px] grid grid-rows-1 grid-cols-1 border-[#4F77A8] border-[2px]`}>
                 <Image
                     src={background}
                     alt="Background"
@@ -30,14 +30,22 @@ export default function MainContentCard() {
                             className="object-contain w-[80px] md:w-[100px] lg:w-[120px]"
                             priority
                         />
-                        <p className={`font-montserrat font-semibold text-[40px] md:text-[48px] lg:text-[58px]`}>Sauvini</p>
+                        <p className={`font-montserrat font-semibold text-[40px] md:text-[48px] lg:text-[58px]`}>Sauvini <motion.span className={`font-bold font-sour-gummy text-[#4F77A8] text-[12px] lg:text-[16px]`}>bac 2026</motion.span></p>
                     </motion.div>
+                    <div className={`w-full flex flex-col items-center`}>
+                        <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-montserrat font-semibold`}
+                            initial={{ opacity: 0, y: 0 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                        >Your future starts here</motion.p>
+                        <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-montserrat font-semibold lg:mt-[2px]`}
+                            initial={{ opacity: 0, y: 0 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                        >مستقبلك يبدأ من هنا</motion.p>
+                    </div>
 
-                    <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-montserrat font-semibold`}
-                        initial={{ opacity: 0, y: 0 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.6 }}
-                    >Where learning meets purpose</motion.p>
+                    
 
                 </div>
 

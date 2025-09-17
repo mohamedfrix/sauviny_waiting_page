@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Work_Sans, Montserrat } from "next/font/google";
+import { Geist, Geist_Mono, Work_Sans, Montserrat, Sour_Gummy } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,6 +14,11 @@ const geistMono = Geist_Mono({
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
+  subsets: ["latin"],
+});
+
+const sourGummy = Sour_Gummy({
+  variable: "--font-sour-gummy",
   subsets: ["latin"],
 });
 
@@ -40,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} ${montserrat.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} ${montserrat.variable} ${sourGummy.variable} antialiased`}
       >
         {children}
       </body>
