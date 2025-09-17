@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className={`w-full h-[100vh] max-h-[100vh] flex justify-center items-center bg-[radial-gradient(circle_at_20%_50%,#0a0a23_0%,#1a1a4e_25%,#2d2b7e_50%,#0f0f3a_100%)] relative overflow-hidden`}>
+      <div className={`w-full h-[100vh] max-h-[100vh] flex justify-center items-center bg-[radial-gradient(circle_at_20%_50%,#0f1419_0%,#1a2332_25%,#27364d_50%,#1b2536_100%)] relative overflow-hidden`}>
         {/* Subtle moving stars effect */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-purple-300 rounded-full animate-pulse"></div>
