@@ -32,17 +32,17 @@ export default function Countdown() {
 
     return (
         <div className="flex flex-wrap items-center justify-center gap-y-2 space-x-2 text-[50px] lg:text-[60px] font-semibold">
-            <div className="bg-white/10 py-2 px-3 rounded-lg backdrop-blur-md border border-white/20">
-               {timeLeft.days} <span className="text-[10px]">days</span>
+            <div className="bg-black/40 py-2 px-3 rounded-lg backdrop-blur-md border border-purple-400/30 shadow-[0_0_15px_rgba(139,69,195,0.4)] text-white">
+               {timeLeft.days} <span className="text-[10px] text-purple-300">days</span>
             </div>
-            <div className="bg-white/10 py-2 px-3 rounded-lg backdrop-blur-md border border-white/20">
-                {timeLeft.hours} <span className="text-[10px]">hrs</span>
+            <div className="bg-black/40 py-2 px-3 rounded-lg backdrop-blur-md border border-purple-400/30 shadow-[0_0_15px_rgba(139,69,195,0.4)] text-white">
+                {timeLeft.hours} <span className="text-[10px] text-purple-300">hrs</span>
             </div>
-            <div className="bg-white/10 py-2 px-3 rounded-lg backdrop-blur-md border border-white/20">
-                {timeLeft.minutes} <span className="text-[10px]">mins</span>
+            <div className="bg-black/40 py-2 px-3 rounded-lg backdrop-blur-md border border-purple-400/30 shadow-[0_0_15px_rgba(139,69,195,0.4)] text-white">
+                {timeLeft.minutes} <span className="text-[10px] text-purple-300">mins</span>
             </div>
-            <div className="bg-white/10 py-2 px-3 rounded-lg backdrop-blur-md border border-white/20">
-                {timeLeft.seconds} <span className="text-[10px]">secs</span>
+            <div className="bg-black/40 py-2 px-3 rounded-lg backdrop-blur-md border border-purple-400/30 shadow-[0_0_15px_rgba(139,69,195,0.4)] text-white animate-pulse">
+                {timeLeft.seconds} <span className="text-[10px] text-purple-300">secs</span>
             </div>
         </div>
     );

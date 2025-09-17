@@ -4,7 +4,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className={`w-full h-[100vh] max-h-[100vh] flex justify-center items-center bg-[radial-gradient(221.6%_141.42%_at_0%_0%,#1B2536_0%,#1F1532_100%)]`}>
+      <div className={`w-full h-[100vh] max-h-[100vh] flex justify-center items-center bg-[radial-gradient(circle_at_20%_50%,#0a0a23_0%,#1a1a4e_25%,#2d2b7e_50%,#0f0f3a_100%)] relative overflow-hidden`}>
+        {/* Subtle moving stars effect */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-purple-300 rounded-full animate-pulse"></div>
+          <div className="absolute top-3/4 left-3/4 w-1 h-1 bg-blue-300 rounded-full animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-purple-200 rounded-full animate-pulse delay-500"></div>
+          <div className="absolute top-1/6 left-5/6 w-1 h-1 bg-indigo-300 rounded-full animate-pulse delay-1500"></div>
+        </div>
         <MainContentCard />
       </div>
     </>

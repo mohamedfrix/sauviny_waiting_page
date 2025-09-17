@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Work_Sans, Montserrat, Sour_Gummy } from "next/font/google";
+import { Geist, Geist_Mono, Work_Sans, Montserrat, Sour_Gummy, Amiri } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,6 +27,12 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const amiri = Amiri({
+  variable: "--font-amiri",
+  subsets: ["arabic", "latin"],
+  weight: ["400", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Sauvini",
   description: "Sauvini - Your trusted platform",
@@ -45,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} ${montserrat.variable} ${sourGummy.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${workSans.variable} ${montserrat.variable} ${sourGummy.variable} ${amiri.variable} antialiased`}
       >
         {children}
       </body>
