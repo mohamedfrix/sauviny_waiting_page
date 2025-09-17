@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 export default function MainContentCard() {
     return (
         <>
-            <div className={`rounded-[32px] lg:rounded-[64px] overflow-hidden w-[95%] lg:w-[70%] h-[80%] min-h-[650px] grid grid-rows-1 grid-cols-1 border-[#4F77A8] border-[2px]`}>
+            <div className={` max-h-[90vh] rounded-[32px] lg:rounded-[64px] overflow-hidden w-[95%] lg:w-[70%] h-[80%] min-h-[650px] grid grid-rows-1 grid-cols-1 border-[#4F77A8] border-[2px]`}>
                 <Image
                     src={background}
                     alt="Background"
@@ -16,7 +16,7 @@ export default function MainContentCard() {
                     priority
                     quality={100}
                 />
-                <div className={`w-full mt-[80px] lg:mt-[120px] row-start-1 col-start-1 flex flex-col items-center self-start gap-y-[20px]`}>
+                <div className={`w-full mt-[80px] lg:mt-[100px] row-start-1 col-start-1 flex flex-col items-center self-start gap-y-[20px]`}>
                     <motion.div className={`w-full flex justify-center items-center gap-x-[12px] -translate-x-[15px]`}
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export default function MainContentCard() {
 
                 </div>
 
-                <motion.div className={`w-full justify-center mt-[20px] self-center justify-self-center row-start-1 col-start-1 flex flex-col items-center gap-y-2 lg:gap-y-4`}
+                <motion.div className={`w-full lg:translate-y-[20%] justify-center mt-[20px] self-center justify-self-center row-start-1 col-start-1 flex flex-col items-center gap-y-2 lg:gap-y-4`}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 1.2 }}
