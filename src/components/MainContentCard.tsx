@@ -30,7 +30,11 @@ export default function MainContentCard() {
                             className="object-contain w-[80px] md:w-[100px] lg:w-[120px]"
                             priority
                         />
-                        <p className={`font-montserrat font-semibold text-[40px] md:text-[48px] lg:text-[58px]`}>Sauvini <motion.span className={`font-bold font-sour-gummy text-[#4F77A8] text-[12px] lg:text-[16px]`}>bac 2026</motion.span></p>
+                        <p className={`font-montserrat font-semibold text-[40px] md:text-[48px] lg:text-[58px]`}>Sauvini <motion.span className={`font-bold font-sour-gummy text-[#4F77A8] text-[12px] lg:text-[16px]`}
+                            initial={{ opacity: 0, y: 0 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 1.2 }}
+                        >bac 2026</motion.span></p>
                     </motion.div>
                     <div className={`w-full flex flex-col items-center`}>
                         <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-montserrat font-semibold`}
@@ -41,7 +45,7 @@ export default function MainContentCard() {
                         <motion.p className={`text-[14px] md:text-[16px] lg:text-[18px] font-montserrat font-semibold lg:mt-[2px]`}
                             initial={{ opacity: 0, y: 0 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.6 }}
+                            transition={{ duration: 0.6, delay: 1.2 }}
                         >مستقبلك يبدأ من هنا</motion.p>
                     </div>
 
